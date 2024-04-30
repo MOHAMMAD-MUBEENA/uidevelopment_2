@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+</head>
+<body>
+    <div>
+    <label for="number1">number1</label>
+
+    <input type="number" id="number1" placeholder="number1">
+    </div>
+    <div>
+        <label for="number2">number2</label>
+        <input type="number" id="number2" placeholder="number2 ">
+
+    </div>
+
+         <button onclick="sum()">sum</button>
+         <p id="result1"></p>
+         <button onclick="multiplication ()"> multiplication </button>
+         <p id="result2"></p>
+         
+         <button onclick="divisison()">divisison </button>
+         <p id="result3"></p>
+         
+         <button onclick="subtraction()"> subtraction </button>
+         <p id="result4"></p>
+         
+      <p id="fullName"></p>
+      <p id="fullName2"></p>
+      <p id ="count"> count</p>
+      <p id ="sum1"></p>
+      <p id ="sum2"></p>
+      <p id ="sum3"></p>
+      <p id ="sum4"></p>
+      <p id ="sum5"></p>
+      <p id ="result"></p>
+        
+    <script>
+        function sum()
+          {
+            var num1=document.getElementById('number1').value;
+            var num2=document.getElementById('number2'). value;
+            document.getElementById('result1').innerHTML= (Number(num1)) + (Number(num2) );
+          }
+        function multiplication(){
+              var num1=document.getElementById('number1').value;
+            var num2=document.getElementById('number2'). value;
+            document.getElementById('result2').innerHTML= (Number(num1) )*( Number(num2) );
+        }
+        function  divisison(){
+            var num1=document.getElementById('number1').value;
+            var num2=document.getElementById('number2'). value;
+            document.getElementById('result3').innerHTML= Number(num1) / Number(num2) ;
+        }
+        function subtraction(){
+            var num1=document.getElementById('number1').value;
+            var num2=document.getElementById('number2'). value;
+    
+            document.getElementById('result4').innerHTML= Number(num1)  - Number(num2) ;
+          
+            
+          }
+          function getFullName(firstName='',lastName=''){
+            return firstName.toUpperCase()+'   ' +lastName.toUpperCase();
+
+          }
+          var fullName=getFullName('mubeen','mohmamd');
+          console.log(fullName);
+          document.getElementById('fullName').innerHTML=fullName;
+
+          var fullName2=getFullName('shaju','shaik');
+          console.log(fullName2);
+          document.getElementById('fullName2').innerHTML=fullName2;
+
+
+          var count =10;
+          count ++;// increment
+          count ++;
+          count ++;
+          count ++;
+          count ++;
+          count --;// decremment
+          console.log(count);
+          document.getElementById('count').innerHTML= count;       
+          var sum1= 0;
+          var sum2= 0;
+          var sum3= 55;
+          var sum4= 6;
+          var sum5= 66;
+          var arr=[4,6,7,8,];
+          sum1 +=arr[0];//sum=sum+arr[0];
+          sum2 -= arr[1];// sum=sum-arr[1];
+          sum3 *= arr[2];
+          sum4 %= arr[3];
+          sum5 /= arr[4];
+          console.log(sum1) ;        
+           console.log(sum2);
+          console.log(sum3);
+          document.getElementById('sum1').innerHTML=sum1;
+          document.getElementById('sum2').innerHTML=sum2;
+          document.getElementById('sum3').innerHTML=sum3;
+          document.getElementById('sum4').innerHTML=sum4;
+          document.getElementById('sum5').innerHTML=sum5;
+          console.log(1000!== 1001);
+          var result ='sanju'=== 'kavya'? 'names are matching':'names are not macting';
+          console.log(result);
+          document.getElementById('result').innerHTML=result;
+
+    </script>
+</body>
+</html>

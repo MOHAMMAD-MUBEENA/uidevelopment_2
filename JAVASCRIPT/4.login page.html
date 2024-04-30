@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>login page</title>
+    <style>
+        input{
+            padding : 8px 10px ;
+
+        }
+        .input-group  {
+            position:relative;
+        }
+        .input-group i {
+            position: absolute;
+            left : 13rem;
+            top:8px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <label>email :</label>
+        <input type ="email" id ="email" placeholder="enter email"/>
+    </div>
+    <div class="input-group">
+        <label>password:</label>
+        <input type="password" id="password" placeholder="enter password"/>
+        <i class="fa fa-eye" id = "password-icon" onclick="togglePasswordVisibility()"></i> 
+    </div>
+        <script>
+            let isVisible= true;
+            function togglePasswordVisibility(){
+                      isVisible = !isVisible ;
+               if ( isVisible){ 
+                    document.getElementById('password').type='password';
+                    document.getElementById('password-icon').classlist.add('fa-eye');
+                    document.getElementById('password-icon').classlist.remove('fa-eye-slash');
+                
+               }else{
+                    document.getElementById('password').type='text';
+                    document.getElementById('password-icon').classlist.remove ('fa-eye');
+                    document.getElementById('password-icon').classlist.add ('fa-eye-slash');
+                }
+            }
+        </script>
+
+
+
+
+         <script src="https://kit.fontawesome.com/cf2f23d462.js" crossorigin="anonymous"></script>
+       
+    </div>
+</body>
+</html>

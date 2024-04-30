@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>javascript</title>
+</head>
+<body>
+    <div>
+       <p id="firstName"> </p>
+       <p id="personinfo"> </p>
+       <p id ="meetings"></p>
+    </div>
+      <script>
+         var firstName= "mubeena";
+         console.log( firstName);
+         document.getElementById("firstName").innerHTML= "hai hello";
+          var lastName =' reshma';
+        var firstName=10000.98
+        console.log (typeof firstName);// finds the type of avriable is this predified or difined variable
+
+        var rank = 76;
+        console.log (typeof rank);
+        var isActive =false ;
+        console.log (typeof isActive);
+        var meetingName=  null;
+        
+        console.log (typeof meetingName); 
+
+        var names=['mubeena','reshma','gafoor','shaju','mujeef'];
+        console.log(typeof names);
+        console.log (names); // to assing the values of array
+        console.log (names[3]); // to accseing the particular value of array using index
+        names[3]='shajiya';//  for replacing the values in the array by using index
+        console.log(names);
+
+        var person =['mubeena','java','fullstack-4564','8976490','789'];
+        console.log(person);
+        var nums = [98,67,78,98,56];
+        console.log(nums);
+
+        var personinfo= {
+            name:'bargav',
+            courseName :'mean stack',
+            batchName:'react-2407',
+            startTime:'9-00am',
+            mobileNo:'786949456',
+            isEnrolled :' true',
+            id : '697',
+            address:{
+                area: 'madhapur',
+                city:'hyderbad',
+                pincode : 500002,
+            }
+        }
+       console.log(personinfo['batchName'],personinfo.mobileNo);  
+       console.log(personinfo.address.city);// to accesing from object
+
+document.getElementById('personinfo').innerHTML=personinfo.batchName;
+
+       var meetings=[
+        {   
+            type:'recurring',
+            meetingName:'interview scheduled for sai kumar',
+            meetingId: 78686858,
+        }
+            ,
+        {
+            type:'recurring',
+            meetingName:'fs -basic 4567',
+            meetingId: 786865645,
+        }
+        ,
+        {
+            type:'recurring',
+            meetingName:'fundamentals-4563',
+            meetingId: 7868684656,
+        
+        }
+       
+        
+          
+        
+       ]
+console.log( meetings);
+document.getElementById( 'meetings').innerHTML=meetings[2].meetingName;
+    
+      </script>
+</body>
+
+</html>
