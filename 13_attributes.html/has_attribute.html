@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!--has atribute-->
+    <style>
+        
+        [href] {
+            border: 5px solid magenta;
+            margin: 2px;
+            padding:3px;
+
+        }
+
+        [target="_blank"]
+        {
+            color: aquamarine;
+            background-color: black;
+        }
+
+        [name^="em"]{
+            border-style: dotted;
+            background-color: aquamarine;
+            color: aliceblue;
+        }
+
+        [type$="rd"]
+        {
+            border-color: brown;
+            background-color: rgb(242, 61, 5);
+            color: burlywood;
+        }
+        [type*="x"]
+        {
+            border-color: rgb(35, 40, 43);
+            background-color: rgb(24, 22, 22);
+            color: rgb(234, 239, 241);
+        }
+    </style>
+</head>
+<body>
+    <a href="has_attribute.html">file</a>
+    <a href="has_attribute.html">file</a>
+    <a href="has_attribute.html">file</a>
+    <a href="has_attribute.html">file</a>
+    <a href="has_attribute.html">file</a>
+    <a href="http://localhost:52330/12_inherit_initial.html">google</a>
+
+    <!--equal to attribute    [=]-->
+    <a href="http://localhost:52330/12_inherit_initial.html" target="_blank">google</a>
+
+    <!--attribute value strts with   [^=]-->
+    <label for="">emai address</label>
+    <input type="email" name="email admin">
+
+ <!--attribute value ends  with   [$=]-->
+ <label for="">password</label>
+ <input type="password" >
+ <!--attribute value contains  [*=]-->
+ <label for="">datails</label>
+ <input type="text " >
+ 
+
+
+    
+</body>
+</html>
