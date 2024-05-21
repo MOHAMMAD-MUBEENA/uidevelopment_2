@@ -59,17 +59,24 @@
          section{
             height: 260px;
          }
-         footer{
-            position:sticky;
-            bottom: 0px;
+         
+         .f1,.d1{
+            position: sticky;
+            bottom: 5px;
             border: 2px solid black;
-            font-size:15px;
-            font-weight: bold;
-            font-family:  'Times New Roman' ;
-            background-color: aqua;
-            height: 40px; 
-            text-align: center;          
-         }
+            background-color: aquamarine;
+            margin: 5px ;
+            padding:5px;
+            display:flex;
+            flex:1;
+            height: 220px;           
+        }
+        li{
+            
+            border: 2px whitesmoke;
+            margin-top: 3px;
+            padding:5px;
+        }
         
        </style>
    
@@ -113,8 +120,34 @@
     <div class="deatil"><img src="../16_layout_boxmodel.html/images1.html/6.jpg" alt="image not found"></div>
     <div class="deatil"><img src="../16_layout_boxmodel.html/images1.html/7.jpg" alt="image not found"></div>
    </section>
-   <footer>
-    <div>MUBEEN TECHNO</div>
+   <footer class="f1">
+      <div class="d1"><img src="..///16_layout_boxmodel.html/images1.html/5.jpg"alt="no net" width="25%"></div>
+      <div class="d1">
+          <ul>
+              <li><h3>DIGITAL LYNC</h3></li>
+              <p><input type="button" value="online pay" ></p>
+             <p> <input type="button" value="credit pay" ></p> 
+              <p><input type="button" value="google pay"> </p>
+          </ul>
+      </div>
+      <div class="d1">
+          <ul>
+              <li><h3>cources</h3></li>
+              <li>java full stack</li>
+              <li>python full stack</li>
+              <li>sales force </li>
+              <li>devops</li>
+
+          </ul>
+      </div>
+      <div class="d1">
+          <ul>
+            <li> <h3>Programs</h3></li>
+              <li> Full Stack Masters</li>
+              <li> Salesforce Masters</li>
+              <li> Cloud DevOps Masters</li>
+      </ul>
+  </div>
    </footer>
 </body>
 </html>
