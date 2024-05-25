@@ -1,153 +1,226 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <title>Document</title>
     <style>
-    section,div{
-        border: 2px solid whitesmoke;
-        margin-bottom: 10px;
-        padding:10px;
-        display:flex;
-        flex:1;
-        margin-right:5px;
-        height:40px;        
-       }
-       div:nth-child(1){
-        flex: 4;
-    
-       }
-       .header{
-        height: 70px;
-        position: sticky;
-        top: 0px;
-        background-color: aquamarine;
-        border-color: black;
-       }
-       body{
-        font-family: Arial;
-       }
-       .logo{
-        font-size: 40px;
-        font-weight: bolder;
-        color: rgb(221, 14, 145);
-       }
-       .services{
-        font-size: 18px;
-        font-weight: bold;    
-       }
-       .button{
-        background-color: blue;
-        color:beige;
-        height:30px;
-        border-radius: 30px;
-        width: 150px;
-        font-size: 16px;
-       }
-       a{
-        text-decoration: none;
-       }
-       section ,.deatil {
+        /*header*/
+        section,
+        div {
+            border: 2px solid whitesmoke;
+            margin-bottom: 10px;
+            padding: 10px;
+            display: flex;
+            flex: 1;
+            margin-right: 5px;
+            height: 40px;
+        }
+
+        div:nth-child(1) {
+            flex: 4;
+
+        }
+
+        .header {
+            height: 70px;
+            position: sticky;
+            top: 0px;
+            background-color: aquamarine;
+            border-color: black;
+        }
+
+        body {
+            font-family: Arial;
+        }
+
+        .logo {
+            font-size: 40px;
+            font-weight: bolder;
+            color: rgb(221, 14, 145);
+        }
+
+        .services {
+            font-size: 18px;
+            font-weight: bold;
+        }
+
+        .button {
+            background-color: blue;
+            color: beige;
+            height: 30px;
+            border-radius: 30px;
+            width: 150px;
+            font-size: 16px;
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+        /*body*/
+        section,
+        .deatil {
             border: 2px solid whitesmoke;
             margin: 10px;
             padding: 10px;
-            display:flex;
-            flex:1;
+            display: flex;
+            flex: 1;
             height: 220px;
-         }
-         section{
-            height: 260px;
-         }
-         
-         .f1,.d1{
-            position: sticky;
-            bottom: 5px;
-            border: 2px solid black;
-            background-color: aquamarine;
-            margin: 5px ;
-            padding:5px;
-            display:flex;
-            flex:1;
-            height: 220px;           
         }
-        li{
-            
+
+        section {
+            height: 260px;
+        }
+
+        /*footer*/
+        .f1,
+        .d1 {
+            border: 2px solid whitesmoke;
+            background-color: aquamarine;
+            margin: 10px;
+            padding: 10px;
+            display: flex;
+            flex: 1;
+            height: 220px;
+        }
+
+        .f1 {
+            position: sticky;
+            bottom: 0px;
+            height: 240px;
+        }
+
+        li {
+
             border: 2px whitesmoke;
             margin-top: 3px;
-            padding:5px;
+            padding: 5px;
         }
+
+        /* media*/
+        @media screen and (min-width:360px)and (max-width :740px) {
+
+            .f1,
+            .d1 {
+                display: block;
+                margin: 10px;
+            }
+        }
+        @media screen and (min-width:360px)and (max-width :740px){
+            section,div {
+                display: block; 
+            }
+          }
+          @media screen and (min-width:360px)and (max-width :740px){
+            section,.deatil {
+                display: block; 
+                min-height: 260px;
+            }
+          }
         
-       </style>
-   
+    </style>
+
 </head>
 <body>
-    <section class="header">
-        <div class="logo"><span>MUBEEN TECHNO </span></div>
-        <div class="services"><span><a href="">product</a></span></div>
-        <div class="services"><span><a href="">services</a></span></div>
-        <div class="services"><span><a href="">solutions</a></span></div>
-        <div class="services"><span><a href="">pricing</a></span></div>
-        <div class="services"><span><input type="button" value="start now" class="button"></span></div>
-    </section>
-    <section>
+<section class="header">
+    <div class="logo"><span>MUBEEN TECHNO </span></div>
+    <div class="services"><span><a href="">product</a></span></div>
+    <div class="services"><span><a href="">services</a></span></div>
+    <div class="services"><span><a href="">solutions</a></span></div>
+    <div class="services"><span><a href="">pricing</a></span></div>
+    <div class="services"><span><input type="button" value="start now" class="button"></span></div>
+</section>
+<section>
     <div class="deatil"><img src="../16_layout_boxmodel.html/images1.html/2.jpg" alt="image not found"></div>
     <div class="deatil"><img src="../16_layout_boxmodel.html/images1.html/4.jpg" alt="image not found"></div>
     <div class="deatil"><img src="../16_layout_boxmodel.html/images1.html/6.jpg" alt="image not found"></div>
     <div class="deatil"><img src="../16_layout_boxmodel.html/images1.html/7.jpg" alt="image not found"></div>
-   </section>
-   <section>
+</section>
+<section>
     <div class="deatil"><img src="../16_layout_boxmodel.html/images1.html/2.jpg" alt="image not found"></div>
     <div class="deatil"><img src="../16_layout_boxmodel.html/images1.html/4.jpg" alt="image not found"></div>
     <div class="deatil"><img src="../16_layout_boxmodel.html/images1.html/6.jpg" alt="image not found"></div>
     <div class="deatil"><img src="../16_layout_boxmodel.html/images1.html/7.jpg" alt="image not found"></div>
-   </section>
-   <section>
+</section>
+<section>
     <div class="deatil"><img src="../16_layout_boxmodel.html/images1.html/2.jpg" alt="image not found"></div>
     <div class="deatil"><img src="../16_layout_boxmodel.html/images1.html/4.jpg" alt="image not found"></div>
     <div class="deatil"><img src="../16_layout_boxmodel.html/images1.html/6.jpg" alt="image not found"></div>
     <div class="deatil"><img src="../16_layout_boxmodel.html/images1.html/7.jpg" alt="image not found"></div>
-   </section>
-   <section>
+</section>
+<section>
     <div class="deatil"><img src="../16_layout_boxmodel.html/images1.html/2.jpg" alt="image not found"></div>
     <div class="deatil"><img src="../16_layout_boxmodel.html/images1.html/4.jpg" alt="image not found"></div>
     <div class="deatil"><img src="../16_layout_boxmodel.html/images1.html/6.jpg" alt="image not found"></div>
     <div class="deatil"><img src="../16_layout_boxmodel.html/images1.html/7.jpg" alt="image not found"></div>
-   </section>
-   <section>
+</section>
+<section>
     <div class="deatil"><img src="../16_layout_boxmodel.html/images1.html/2.jpg" alt="image not found"></div>
     <div class="deatil"><img src="../16_layout_boxmodel.html/images1.html/4.jpg" alt="image not found"></div>
     <div class="deatil"><img src="../16_layout_boxmodel.html/images1.html/6.jpg" alt="image not found"></div>
     <div class="deatil"><img src="../16_layout_boxmodel.html/images1.html/7.jpg" alt="image not found"></div>
-   </section>
-   <footer class="f1">
-      <div class="d1"><img src="..///16_layout_boxmodel.html/images1.html/5.jpg"alt="no net" width="25%"></div>
-      <div class="d1">
-          <ul>
-              <li><h3>DIGITAL LYNC</h3></li>
-              <p><input type="button" value="online pay" ></p>
-             <p> <input type="button" value="credit pay" ></p> 
-              <p><input type="button" value="google pay"> </p>
-          </ul>
-      </div>
-      <div class="d1">
-          <ul>
-              <li><h3>cources</h3></li>
-              <li>java full stack</li>
-              <li>python full stack</li>
-              <li>sales force </li>
-              <li>devops</li>
+</section>
 
-          </ul>
-      </div>
-      <div class="d1">
-          <ul>
-            <li> <h3>Programs</h3></li>
-              <li> Full Stack Masters</li>
-              <li> Salesforce Masters</li>
-              <li> Cloud DevOps Masters</li>
-      </ul>
-  </div>
-   </footer>
+<!--foooter-->
+<footer class="f1">
+    <div class="d1">
+        <ul>
+            <h3>mubeen techno</h3>
+            <hr>
+            <img src="https://thumbs.dreamstime.com/b/minimalist-simple-design-lorem-ipsum-logo-design-suitable-color-guide-lorem-ipsum-text-minimalist-simple-design-lorem-237535164.jpg"
+                alt="no net" width="90px" height="50px">
+            <hr>
+            <p> xyz city
+                507164
+            </p>
+        </ul>
+
+    </div>
+    <div class="d1">
+        <ul>
+            <li>
+                <h3>DIGITAL LYNC</h3>
+            </li>
+            <p><input type="button" value="online pay"></p>
+            <p> <input type="button" value="credit pay"></p>
+            <p><input type="button" value="google pay"> </p>
+        </ul>
+    </div>
+    <div class="d1">
+        <ul>
+            <li>
+                <h3>cources</h3>
+            </li>
+            <li>java full stack</li>
+            <li>python full stack</li>
+            <li>sales force </li>
+            <li>devops</li>
+
+        </ul>
+    </div>
+    <div class="d1">
+        <ul>
+            <li>
+                <h3>Programs</h3>
+            </li>
+            <li> Full Stack Masters</li>
+            <li> Salesforce Masters</li>
+            <li> Cloud DevOps Masters</li>
+        </ul>
+    </div>
+    <div class="d1">
+        <ul>
+            <li style="color: crimson; font-size: 20px;" class="fa fa-facebook"><a href="" style="color: black;"> FaceBook</a></li> <br><br>
+                <li style="color: crimson; font-size: 20px;" class="fa fa-instagram"><a href="" style="color: black;"> Instagram</a></li> <br><br>
+                <li style="color: crimson; font-size: 20px;" class="fa fa-twitter"><a href="" style="color: black;"> Twitter</a></li> <br><br>
+                <li style="color: crimson; font-size: 20px  ;" class="fa fa-linkedin"><a href="" style="color: black;"> Linkedin</a></li>
+        </ul>
+    </div>
+</footer>
 </body>
 </html>
+
+ 
