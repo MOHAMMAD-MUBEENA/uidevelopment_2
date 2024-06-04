@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        section,
+        div {
+            border: 2px solid whitesmoke;
+            margin: 5px;
+            padding: 10px;
+            display: grid;
+            grid-template-rows: 100px 200px 200px 200px 200px 100px;
+            grid-template-columns: 15% 17% 17% 17% 17% 17%;
+            border-radius: 20px;
+
+
+        }
+
+        .eight {
+            grid-row: span 3;
+            display: block;
+        }
+
+        .header {
+            grid-column-start: 1;
+            grid-column-end: 7;
+            background-color: aliceblue ;
+            position: sticky;
+            top: 5px;
+            
+
+
+
+        }
+
+        .footer {
+            grid-column-start: 1;
+            grid-column-end: 7;
+            background-color: aliceblue ;
+
+
+        }
+
+        .two {
+            grid-row: span 1;
+            grid-template-columns: 15%;
+            display: block;
+        }
+
+        .t-shirts {
+            width: 10px;
+        }
+        a{
+            text-decoration: none;
+            color: hotpink;
+           
+        }
+        img{
+            border-radius: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <section>
+        <div class="header">
+            <img src="https://th.bing.com/th/id/OIP.IWqipqEL_Q96I1VXLCYhjwHaDt?rs=1&pid=ImgDetMain" width="190px"
+                height="50px">
+            <P><a href="">home</a></P>
+            <P><a href="">MEN</a></P>
+            <P><a href="">WOMENS</a></P>
+            <P><a href="">KIDS</a></P>
+    
+        </div>
+
+        <div class=" grid-items two">
+            <h4>secfiactions</h4>
+            <p><input type="radio">
+            <label for="">geans</label></p>
+            <p><input type="radio">
+                <label for="">t-shirts</label></p>
+            
+        </div>
+        <div class=" grid-items three">
+            <img clss="t-shirts"
+                src="https://media.istockphoto.com/id/1354412166/photo/studio-portrait-of-15-year-old-teenage-girl-with-curly-red-hair.jpg?s=612x612&w=0&k=20&c=j7NHMUsGL4o5oAP_MuGi9UrybyInRPcdtxq750YoLTQ="
+                width="200px" height="170px">
+
+        </div>
+        <div class=" grid-items four">
+            <img clss="t-shirts"
+                src="https://media.istockphoto.com/id/1354412166/photo/studio-portrait-of-15-year-old-teenage-girl-with-curly-red-hair.jpg?s=612x612&w=0&k=20&c=j7NHMUsGL4o5oAP_MuGi9UrybyInRPcdtxq750YoLTQ="
+                width="200px" height="170px">
+
+        </div>
+        <div class=" grid-items five">
+            <img clss="t-shirts"
+                src="https://media.istockphoto.com/id/1354412166/photo/studio-portrait-of-15-year-old-teenage-girl-with-curly-red-hair.jpg?s=612x612&w=0&k=20&c=j7NHMUsGL4o5oAP_MuGi9UrybyInRPcdtxq750YoLTQ="
+                width="200px" height="170px">
+
+        </div>
+        <div class=" grid-items six">
+            <img clss="t-shirts"
+                src="https://media.istockphoto.com/id/1354412166/photo/studio-portrait-of-15-year-old-teenage-girl-with-curly-red-hair.jpg?s=612x612&w=0&k=20&c=j7NHMUsGL4o5oAP_MuGi9UrybyInRPcdtxq750YoLTQ="
+                width="200px" height="170px">
+
+        </div>
+
+        <div class=" grid-items seven">
+            <img clss="t-shirts"
+                src="https://media.istockphoto.com/id/1354412166/photo/studio-portrait-of-15-year-old-teenage-girl-with-curly-red-hair.jpg?s=612x612&w=0&k=20&c=j7NHMUsGL4o5oAP_MuGi9UrybyInRPcdtxq750YoLTQ="
+                width="200px" height="170px">
+
+        </div>
+        <!--eight-->
+        <div class=" grid-items eight">
+            <p>
+            <h4>BRANDS</h4>
+            </p>
+            <p> <input type="checkbox">
+                <label>redbok</label>
+            </p>
+            <p> <input type="checkbox">
+                <label>redbok</label>
+            </p>
+            <p> <input type="checkbox">
+                <label>redbok</label>
+            </p>
+            <p> <input type="checkbox">
+                <label>redbok</label>
+            </p>
+            <p> <input type="checkbox">
+                <label>redbok</label>
+            </p>
+            <hr>
+            <p>
+                <h4>PRICE</h4>
+                </p>
+                <p> <input type="checkbox">
+                    <label>100-1000</label>
+                </p>
+                <p> <input type="checkbox">
+                    <label>1000-2000</label>
+                </p>
+                <p> <input type="checkbox">
+                    <label>2000-3000</label>
+                </p>
+                <p> <input type="checkbox">
+                    <label>3k-4k</label>
+                </p>
+                <p> <input type="checkbox">
+                    <label>4k-5k</label>
+                </p>
+                <hr>
+
+        </div>
+        <div class=" grid-items nine">
+            <img clss="t-shirts"
+                src="https://media.istockphoto.com/id/1354412166/photo/studio-portrait-of-15-year-old-teenage-girl-with-curly-red-hair.jpg?s=612x612&w=0&k=20&c=j7NHMUsGL4o5oAP_MuGi9UrybyInRPcdtxq750YoLTQ="
+                width="200px" height="170px">
+        </div>
+        <div class="grid-items ten">
+            <img clss="t-shirts"
+                src="https://media.istockphoto.com/id/1354412166/photo/studio-portrait-of-15-year-old-teenage-girl-with-curly-red-hair.jpg?s=612x612&w=0&k=20&c=j7NHMUsGL4o5oAP_MuGi9UrybyInRPcdtxq750YoLTQ="
+                width="200px" height="170px">
+        </div>
+        <div class="grid-items eleven">
+            <img clss="t-shirts"
+                src="https://media.istockphoto.com/id/1354412166/photo/studio-portrait-of-15-year-old-teenage-girl-with-curly-red-hair.jpg?s=612x612&w=0&k=20&c=j7NHMUsGL4o5oAP_MuGi9UrybyInRPcdtxq750YoLTQ="
+                width="200px" height="170px">
+        </div>
+        <div class="  grid-items twelve">
+            <img clss="t-shirts"
+                src="https://media.istockphoto.com/id/1354412166/photo/studio-portrait-of-15-year-old-teenage-girl-with-curly-red-hair.jpg?s=612x612&w=0&k=20&c=j7NHMUsGL4o5oAP_MuGi9UrybyInRPcdtxq750YoLTQ="
+                width="200px" height="170px">
+        </div>
+        <div class=" grid-items therteen">
+            <img clss="t-shirts"
+                src="https://media.istockphoto.com/id/1354412166/photo/studio-portrait-of-15-year-old-teenage-girl-with-curly-red-hair.jpg?s=612x612&w=0&k=20&c=j7NHMUsGL4o5oAP_MuGi9UrybyInRPcdtxq750YoLTQ="
+                width="200px" height="170px">
+        </div>
+        <div class="grid-items fourteen">
+            <img clss="t-shirts"
+                src="https://media.istockphoto.com/id/1354412166/photo/studio-portrait-of-15-year-old-teenage-girl-with-curly-red-hair.jpg?s=612x612&w=0&k=20&c=j7NHMUsGL4o5oAP_MuGi9UrybyInRPcdtxq750YoLTQ="
+                width="200px" height="170px">
+        </div>
+        <div class="grid-items fifteen">
+            <img clss="t-shirts"
+                src="https://media.istockphoto.com/id/1354412166/photo/studio-portrait-of-15-year-old-teenage-girl-with-curly-red-hair.jpg?s=612x612&w=0&k=20&c=j7NHMUsGL4o5oAP_MuGi9UrybyInRPcdtxq750YoLTQ="
+                width="200px" height="170px">
+        </div>
+        <div class="grid-items sixteen"><img clss="t-shirts"
+                src="https://media.istockphoto.com/id/1354412166/photo/studio-portrait-of-15-year-old-teenage-girl-with-curly-red-hair.jpg?s=612x612&w=0&k=20&c=j7NHMUsGL4o5oAP_MuGi9UrybyInRPcdtxq750YoLTQ="
+                width="200px" height="170px">
+        </div>
+        <div class="grid-items seventeen">
+            <img clss="t-shirts"
+                src="https://media.istockphoto.com/id/1354412166/photo/studio-portrait-of-15-year-old-teenage-girl-with-curly-red-hair.jpg?s=612x612&w=0&k=20&c=j7NHMUsGL4o5oAP_MuGi9UrybyInRPcdtxq750YoLTQ="
+                width="200px" height="170px">
+        </div>
+        <div class="grid-items eighteen">
+            <img clss="t-shirts"
+                src="https://media.istockphoto.com/id/1354412166/photo/studio-portrait-of-15-year-old-teenage-girl-with-curly-red-hair.jpg?s=612x612&w=0&k=20&c=j7NHMUsGL4o5oAP_MuGi9UrybyInRPcdtxq750YoLTQ="
+                width="200px" height="170px">
+        </div>
+        <div class="grid-items nineteen"><img clss="t-shirts"
+                src="https://media.istockphoto.com/id/1354412166/photo/studio-portrait-of-15-year-old-teenage-girl-with-curly-red-hair.jpg?s=612x612&w=0&k=20&c=j7NHMUsGL4o5oAP_MuGi9UrybyInRPcdtxq750YoLTQ="
+                width="200px" height="170px">
+        </div>
+        <div class="grid-items twenty">
+            <img clss="t-shirts"
+                src="https://media.istockphoto.com/id/1354412166/photo/studio-portrait-of-15-year-old-teenage-girl-with-curly-red-hair.jpg?s=612x612&w=0&k=20&c=j7NHMUsGL4o5oAP_MuGi9UrybyInRPcdtxq750YoLTQ="
+                width="200px" height="170px">
+        </div>
+        <div class="grid-items twenty one">
+            <img clss="t-shirts"
+                src="https://media.istockphoto.com/id/1354412166/photo/studio-portrait-of-15-year-old-teenage-girl-with-curly-red-hair.jpg?s=612x612&w=0&k=20&c=j7NHMUsGL4o5oAP_MuGi9UrybyInRPcdtxq750YoLTQ="
+                width="200px" height="170px">
+        </div>
+        <div class="grid-items twenty two">
+            <img clss="t-shirts"
+                src="https://media.istockphoto.com/id/1354412166/photo/studio-portrait-of-15-year-old-teenage-girl-with-curly-red-hair.jpg?s=612x612&w=0&k=20&c=j7NHMUsGL4o5oAP_MuGi9UrybyInRPcdtxq750YoLTQ="
+                width="200px" height="170px">
+        </div>
+        <div class="grid-itemstwenty three">
+            <img clss="t-shirts"
+                src="https://media.istockphoto.com/id/1354412166/photo/studio-portrait-of-15-year-old-teenage-girl-with-curly-red-hair.jpg?s=612x612&w=0&k=20&c=j7NHMUsGL4o5oAP_MuGi9UrybyInRPcdtxq750YoLTQ="
+                width="200px" height="170px">
+        </div>
+        <div class="footer">footer</div>
+    </section>
+</body>
+
+</html>
