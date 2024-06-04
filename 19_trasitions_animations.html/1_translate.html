@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div{
+            border: 2px solid blue;
+            margin:10px;
+            padding: 10px;
+        }
+        div:nth-child(1){
+            transform: translate(100px);/*moving only x axis*/
+            transform: translate(100px ,200px);/*moving  x axis and y axis*/
+            transform: translate(0px ,200px);/*moving  x axis and y axis*/
+        }
+    </style>
+</head>
+<body>
+    <div>one</div>
+    <div>two</div>
+    <div>three</div>
+    <div>four</div>
+</body>
+</html>
