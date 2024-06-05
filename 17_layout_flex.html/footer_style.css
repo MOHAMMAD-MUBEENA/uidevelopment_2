@@ -1,0 +1,19 @@
+.f1,.d1{
+    border: 2px solid whitesmoke;
+    background-color: aquamarine;
+    margin: 10px ;
+    padding: 10px;
+    display:flex;
+    flex:1;
+
+    
+}
+.f1{
+       height:240px;
+}
+li{
+    
+    border: 2px whitesmoke;
+    margin-top: 3px;
+    padding:5px;
+}

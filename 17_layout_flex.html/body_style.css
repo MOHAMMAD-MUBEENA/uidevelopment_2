@@ -1,0 +1,11 @@
+section ,.deatil {
+    border: 2px solid whitesmoke;
+    margin: 10px;
+    padding: 10px;
+    display:flex;
+    flex:1;
+    height: 220px;
+ }
+ section{
+    height: 260px;
+ }
