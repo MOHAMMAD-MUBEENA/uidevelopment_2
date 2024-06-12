@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Document</title>
+    <style>
+        .container,.item{
+            border: 2px solid blue;
+            margin: 10px;
+            padding: 10px;
+            text-align: center;
+
+        }
+
+        img {
+            width: 200px;
+            height: 250px;
+        }
+        .container{
+            display: grid;
+        }
+        @media screen and (min-width:1024px)and (max-width:1366px){
+            .container{
+                grid-template-columns:repeat(2,50%);
+            }
+        }
+        @media screen and (min-width:820px)and (max-width:1180px){
+            .container{
+                grid-template-columns:1fr 1fr 1fr;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="item"><img src="./images1.html/1.png" alt="">
+        </div>
+        <div class="item"><img src="./images1.html/2.jpg" alt="">
+        </div>
+        <div class="item"><img src="./images1.html/3.avif" alt="">
+        </div>
+        <div class="item"><img src="./images1.html/5.jpg" alt="">
+        </div>
+        <div class="item"><img src="./images1.html/4.jpg" alt="">
+        </div>
+        <div class="item"><img src="./images1.html/6.jpg" alt="">
+        </div>
+        <div class="item"><img src="./images1.html/8.jpg" alt="">
+        </div>
+        <div class="item"><img src="./images1.html/1.png" alt="">
+        </div>
+        <div class="item"><img src="./images1.html/2.jpg" alt="">
+        </div>
+        <div class="item"><img src="./images1.html/3.avif" alt="">
+        </div>
+        <div class="item"><img src="./images1.html/5.jpg" alt="">
+        </div>
+        <div class="item"><img src="./images1.html/4.jpg" alt="">
+        </div>
+        <div class="item"><img src="./images1.html/6.jpg" alt="">
+        </div>
+        <div class="item"><img src="./images1.html/8.jpg" alt="">
+        </div>
+        <div class="item"><img src="./images1.html/1.png" alt="">
+        </div>
+        <div class="item"><img src="./images1.html/2.jpg" alt="">
+        </div>
+        <div class="item"><img src="./images1.html/3.avif" alt="">
+        </div>
+        <div class="item"><img src="./images1.html/5.jpg" alt="">
+        </div>
+        <div class="item"><img src="./images1.html/4.jpg" alt="">
+        </div>
+        <div class="item"><img src="./images1.html/6.jpg" alt="">
+        </div>
+        <div class="item"><img src="./images1.html/8.jpg" alt="">
+        </div>
+    </div>
+</body>
+
+</html>

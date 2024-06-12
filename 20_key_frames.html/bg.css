@@ -1,0 +1,61 @@
+body {
+    background-image: url(./bgimg/bg04.png);
+    height: 100vh;
+    background-size: cover;
+}
+.grid-container{
+display: grid;
+grid-template-columns: 400px 200px 200px 200px 200px 200px 200px ;
+grid-template-rows: 250px;
+}
+a{
+    text-decoration: none;
+    color: white;
+    text-align: center;
+    line-height: 50px;
+}
+img{
+    border-radius: 20px;
+    
+}
+.content{
+    display: block;
+    
+  
+}
+.content-item{
+    color:white;
+    font-weight: bolder;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: large;
+}
+.grid-container{
+    opacity: 0;/* for disapear content when corser is out of body*/
+    transition: opacity 0.5s case-in-out ;
+
+}
+.grid-container:hover{
+    opacity: 1;/* for apear content of the body when user moves curser to the body part*/
+}
+.content{
+   /* animation: moveLeftToRight 1.5s ease-in-out forwards;*/
+   animation: run 5s linear infinite alternate;
+    color: white;
+    margin: 0px;
+    padding: 10px;
+}
+@keyframes run {
+    0% {
+        left:100%;
+    }
+    50% {
+        left: 100%;
+    }
+    100% {
+        left:100%;
+        transform: scaleX(-1);
+    }
+}
+
+
+
