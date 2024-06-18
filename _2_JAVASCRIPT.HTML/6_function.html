@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <section>
+        <div><label> NUMBER1:</label>
+            <input type="number" placeholder="enter number 1" id="number1"/></div>
+
+            <div><label> NUMBER2:</label>
+                <input type="number" placeholder="enter number 2" id="number2"/></div>
+             <button onclick="sum()">sum</button>
+             <button onclick="subtration()">subtration</button>
+             <button onclick="multiplication()">mutiplication</button >
+             <button  onclick="division()">division</button >
+             <p id="result"></p>
+             <script>
+             function sum(){
+                var num1=document.getElementById('number1').value;
+                var num2=document.getElementById('number2').value;
+                document.getElementById('result').innerHTML=Number(num1)+ Number(num2);
+             }
+             function subtration(){
+                var num1=document.getElementById('number1').value;
+                var num2=document.getElementById('number2').value;
+                document.getElementById('result').innerHTML=Number(num1) - Number(num2);
+             }
+             function multiplication(){
+                var num1=document.getElementById('number1').value;
+                var num2=document.getElementById('number2').value;
+                document.getElementById('result').innerHTML=Number(num1) * Number(num2);
+             }
+             function division(){
+                var num1=document.getElementById('number1').value;
+                var num2=document.getElementById('number2').value;
+                document.getElementById('result').innerHTML=Number(num1) / Number(num2);
+             }
+
+/*return getfullName*/
+            function getfullName(firstName='',lastName=''){
+                return firstName.toUpperCase()+  ' '  +lastName.toUpperCase();
+            }
+                     var firstName=getfullName('LOKESH','J');
+                     console.log(firstName);
+                     var firstName2=getfullName('mubeen','mohammad');
+                     console.log(firstName2);
+             </script>
+            
+    </section>
+</body>
+</html>

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="number"></p>
+    <p id="summation"></p>
+   <script>
+    var count=10;
+    count++
+    count++
+    count++
+    count++
+
+    count--
+    console.log(count);
+    document.getElementById('number').innerHTML=count;
+
+    var sum=0;
+    var arr=[1,2,3,4,5,6];
+    sum+=arr[0];
+    sum+=arr[1];
+    sum+=arr[2];
+    sum+=arr[3];
+    sum+=arr[4];// sum=sum+arr[4]
+    console.log(sum);
+    document.getElementById('summation').innerHTML=sum;
+
+    console.log(1000!==1000);
+    var result='mubeena'==='mubeen'?'names are same':'names are not matching';
+    console.log(result);
+   </script>
+</body>
+</html>

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        section,div{
+        
+            margin: 10px;
+            padding: 10px;
+            grid-template-columns: repeat(5,20%);
+        }
+        section{
+            display: grid;
+            border: 2px solid black;
+            border-radius: 20px;
+
+
+        }
+    </style>
+</head>
+
+<body>
+    <section>
+        <div>
+            <p  id="redBus[1]"></p>
+        </div>
+        <div>
+            <p id="redBus[2]"></p>
+        </div>
+        <div>
+            <p id="redBus[3]"></p>
+        </div>
+        <div>
+            <p id="redBus[4]"></p>
+        </div>
+        <div>
+            <p id="redBus[5]"></p>
+        </div>
+    </section>
+    <script>
+        var redBus = {
+            bus: 'TSRTC - 64959',
+            start: '3:40',
+            duration: '6hr',
+            arrival: '10.45',
+            rating: '4.4'
+
+        };
+        console.log(redBus);
+        document.getElementById('redBus[1]').innerHTML = redBus.bus;
+        document.getElementById('redBus[2]').innerHTML = redBus.start;
+        document.getElementById('redBus[3]').innerHTML = redBus.duration;
+        document.getElementById('redBus[4]').innerHTML = redBus.arrival;
+        document.getElementById('redBus[5]').innerHTML = redBus.rating;
+
+
+    </script>
+</body>
+
+</html>

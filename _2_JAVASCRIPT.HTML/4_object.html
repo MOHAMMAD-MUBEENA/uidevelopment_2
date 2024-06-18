@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="personinfo"></p>
+    <p id="meetings"></p>
+    <script>
+        var personinfo={
+            name:'bargav',
+            courseName :'mean stack',
+            batchName:'react-2407',
+            startTime:'9-00am',
+            mobileNo:'786949456',
+            isEnrolled :' true',
+            id : '697',
+            address:{
+                area: 'madhapur',
+                city:'hyderbad',
+                pincode : 500002,
+            }
+        }
+       console.log(personinfo['batchName'],personinfo.mobileNo);  
+       console.log(personinfo.address.city);// to accesing from object
+
+document.getElementById('personinfo').innerHTML=personinfo.batchName;
+
+
+var meetings=[
+        {   
+            type:'recurring',
+            meetingName:'interview scheduled for sai kumar',
+            meetingId: 78686858,
+        }
+            ,
+        {
+            type:'recurring',
+            meetingName:'fs -basic 4567',
+            meetingId: 786865645,
+        }
+        ,
+        {
+            type:'recurring',
+            meetingName:'fundamentals-4563',
+            meetingId: 7868684656,
+        
+        }
+       
+        
+          
+        
+       ]
+console.log( meetings);
+document.getElementById( 'meetings').innerHTML=meetings[2].meetingName;
+        
+    </script>
+</body>
+</html>
