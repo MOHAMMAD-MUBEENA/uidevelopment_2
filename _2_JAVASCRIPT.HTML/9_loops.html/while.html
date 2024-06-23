@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        button {
+            background-color: red;
+            color: white;
+            border: none;
+            padding: 8px 12px;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+
+<body>
+    <button onclick="deleteAll()">deleteAll</button>
+    <div id="container">
+        <p> 1.A forest is an ecosystem characterized by a dense community of trees. Hundreds of definitions of forest
+            are</p>
+        <p> 1.A forest is an ecosystem characterized by a dense community of trees. Hundreds of definitions of forest
+            are</p>
+        <p> 1.A forest is an ecosystem characterized by a dense community of trees. Hundreds of definitions of forest
+            are</p>
+        <p> 1.A forest is an ecosystem characterized by a dense community of trees. Hundreds of definitions of forest
+            are</p>
+        <p> 1.A forest is an ecosystem characterized by a dense community of trees. Hundreds of definitions of forest
+        <p> 1.A forest is an ecosystem characterized by a dense community of trees. Hundreds of definitions of forest
+            are</p> are</p>
+        <p> 1.A forest is an ecosystem characterized by a dense community of trees. Hundreds of definitions of forest
+            are</p>
+        <p> 1.A forest is an ecosystem characterized by a dense community of trees. Hundreds of definitions of forest
+            are</p>
+        <p> 1.A forest is an ecosystem characterized by a dense community of trees. Hundreds of definitions of forest
+            are</p>
+
+        <p> 1.A forest is an ecosystem characterized by a dense community of trees. Hundreds of definitions of forest
+            are</p>
+        <p> 1.A forest is an ecosystem characterized by a dense community of trees. Hundreds of definitions of forest
+            are</p>
+        <p> 1.A forest is an ecosystem characterized by a dense community of trees. Hundreds of definitions of forest
+            are</p>
+        <p> 1.A forest is an ecosystem characterized by a dense community of trees. Hundreds of definitions of forest
+            are</p>
+        <p> 1.A forest is an ecosystem characterized by a dense community of trees. Hundreds of definitions of forest
+            are</p>
+        <p> 1.A forest is an ecosystem characterized by a dense community of trees. Hundreds of definitions of forest
+            are</p>
+        <p> 1.A forest is an ecosystem characterized by a dense community of trees. Hundreds of definitions of forest
+            are</p>
+
+    </div>
+
+
+
+    <script>
+        //simple while program
+        let i = 0;
+        while (i < 10) {
+            console.log('itteration:', i);
+            i++;
+
+        }
+        
+        function deleteAll() {
+            const container = document.getElementById('container');
+
+            while (container.firstChild) {
+
+                container.removeChild(container.lastChild);
+            }
+        }
+    </script>
+</body>
+
+</html>

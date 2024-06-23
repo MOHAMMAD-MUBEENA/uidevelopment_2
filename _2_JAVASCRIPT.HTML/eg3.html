@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        section {
+            text-align: center;
+            border: 2px solid blue;
+            margin: 320px;
+            padding: 30px;
+            border-radius: 20px;
+        }
+
+        div {
+            padding: 20px;
+            margin: 20px;
+
+        }
+    </style>
+</head>
+
+<body>
+    <section>
+        <p id="invalid"
+            style="text-align: center;color: brown; font-size: small; font-family:'Times New Roman', Times, serif;"></p>
+        <div>
+            <label for="">EMAIL : </label>
+            <input type="email" id="email" placeholder="enter valid email"
+                style="padding: 10px;border:2px solid blue;width:250px; border-radius: 20px" onkeyup="clearvalue()">
+        </div>
+        <div>
+            <label>PASSWORD:</label>
+            <input type="password" id="password" placeholder="enter valid password"
+                style="padding: 10px;border:2px solid blue;width:250px; border-radius: 20px">
+            <i class="fa fa-eye" id="password-icon" onkeyup="clearvalue()"></i>
+        </div>
+        <div>
+            <button style="background-color: aqua; padding: 5px;color: white; width:100px; border-radius: 20px"
+                onclick=" validatedetails()"> login</button>
+        </div>
+       
+    </section>
+    <script>
+     
+        function validatedetails() {
+
+            const user={
+                email:'mubi@gmail.com',
+                password: 'mubi@1234'
+            }
+    
+
+            const enteredEmail= document.getElementById('email').vlaue;
+            const enteredPassword= document.getElementById('password').vlaue;
+
+            if (user.email===enteredEmail  &&  user.password===enteredPassword) {
+                window.location.replace("newpage.html");
+             } else {
+                document.getElementById('invalid').innerHTML = 'invalid email or password ';
+                document.getElementById('invalid').style.color.red;
+            }
+        }
+
+   function clearvalue(){
+    document.getElementById('invalid').innerHTML = ' ';
+   }
+    </script>
+    <script src="https://kit.fontawesome.com/cf2f23d462.js" crossorigin="anonymous"></script>
+</body>
+
+</html>

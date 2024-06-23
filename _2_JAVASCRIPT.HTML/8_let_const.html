@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        var courseName1 = 'mubeen';
+        console.log(courseName1);
+
+        let courseName2 = 'mubeen';
+        console.log(courseName2);
+
+        courseName2 = 'rizwana'//multiple times
+        console.log(courseName2);
+
+        const courseName3 = 'mubeen';//only once declared with same variable name
+        console.log(courseName3);
+
+
+
+        //function scope
+        function displaycourseName() {
+            var courseName = 'sanju';
+            console.log(courseName); //variable declared in function oonly accessed only with in the function
+
+        }
+
+        //if 
+        const user1 = 'mubeena45';
+        const user2 = 'mubeena45';
+        if (user1===user2) {
+            console.log('names are matching');
+        }
+ let isActive=true;
+ if (isActive){
+    console.log('in if block is true');
+ }
+    </script>
+</body>
+
+</html>

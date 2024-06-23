@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+   <style>
+    #outer-layer{
+        border: 2px solid black;
+        margin: 10px;
+        padding: 10px;
+        border-radius: 20px;
+        display:block;
+        width: 160px;
+        height: 480px;
+    }
+    .inner-layer{
+        border:1px solid black;
+        border-radius: 50%;
+        height: 150px;
+        margin: 5px;
+    }
+    button{
+        border-radius: 20px;
+        margin: 5px;
+        width:100px;
+    }
+    
+
+</style>
+</head>
+<body>
+    <h1>traffic signals</h1>
+    <div id="outer-layer">
+        <div class="inner-layer" id="red">
+
+        </div>
+        <div class="inner-layer" id="orange" >
+
+        </div>
+        <div class="inner-layer" id="green">
+
+        </div>
+    </div>
+    <button id="red-btn" style="background-color: RED;" onclick="togglesignal('red')"> RED</button>
+    <button id="orange-btn" style="background-color: orange; "onclick="togglesignal('orange')"> ORANGE</button>
+    <button id="green-btn" style="background-color: green;"onclick="togglesignal('green')"> GREEN</button>
+    <script>
+        function togglesignal(signalcolor){
+            if (signalcolor === 'red') {
+                document.getElementById('red').style.backgroundColor='red';
+                document.getElementById('orange').style.backgroundColor='white';
+                document.getElementById('green').style.backgroundColor='white';
+            }else if (signalcolor === 'orange'){
+                document.getElementById('orange').style.backgroundColor='orange';
+                document.getElementById('red').style.backgroundColor='white';
+                document.getElementById('green').style.backgroundColor='white';
+            }else if (signalcolor === 'green'){
+                document.getElementById('green').style.backgroundColor='green';
+                document.getElementById('red').style.backgroundColor='white';
+                document.getElementById('orange').style.backgroundColor='white';
+            }
+
+        }
+    </script>
+</body>
+</html>
