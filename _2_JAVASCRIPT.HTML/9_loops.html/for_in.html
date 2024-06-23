@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div id="personinfo">
+
+    </div>
+    <script>
+        const personinfo = {
+            "id": " 1",
+            "name": "Leanne Graham",
+            "username": "Bret",
+            "email": "Sincere@april.biz",
+            "address": {
+                "street": "Kulas Light",
+                "suite": "Apt. 556",
+                "city": "Gwenborough",
+                "zipcode": "92998-3874",
+                "geo": {
+                    "lat": "-37.3159",
+                    "lng": "81.1496"
+                }
+            },
+            "phone": "1-770-736-8031 x56442",
+            "website": "hildegard.org",
+            "company": {
+                "name": "Romaguera-Crona",
+                "catchPhrase": "Multi-layered client-server neural-net",
+                "bs": "harness real-time e-markets"
+            }
+        };
+
+        for (let propertyName in personinfo) {
+            const personinfoDiv = document.getElementById('personinfo');
+            const p = document.createElement('p');
+            if (typeof personinfo[propertyName] === 'object') {
+                if (propertyName === 'address') {
+                    p.innerHTML = propertyName + ': ' + personinfo[propertyName]['street'] + ', ' + personinfo[propertyName]['city'];
+                } else {
+                    
+                    p.innerHTML = propertyName + ': ' + personinfo[propertyName]['name'];
+                }
+            } else {
+                p.innerHTML = propertyName + ': ' + personinfo[propertyName];
+            }
+            personinfoDiv.appendChild(p);
+        }
+
+
+
+    </script>
+
+</body>
+
+</html>

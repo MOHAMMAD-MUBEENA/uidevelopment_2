@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div id="userinfo">
+
+    </div>
+    <script>
+        const userinfo = {
+            "id": 1,
+            "name": "Leanne Graham",
+            "username": "Bret",
+            "email": "Sincere@april.biz",
+            "street": "Kulas Light",
+            "suite": "Apt. 556",
+            "city": "Gwenborough",
+            "zipcode": "92998-3874",
+            "phone": "1-770-736-8031 x56442",
+            "website": "hildegard.org",
+            "company": "Romaguera-Crona",
+            "catchPhrase": "Multi-layered client-server neural-net",
+            "bs": "harness real-time e-markets"
+
+        };
+       for (let propertyName in userinfo){
+       // console.log(userinfo[propertyName]);//for left side values
+      // console.log(propertyName);//for right side values
+      console.log(propertyName+':' +userinfo[propertyName]);//for both values
+      const userinfoDiv=document.getElementById('userinfo');
+      const p=document.createElement('p')
+      p.innerHTML=propertyName+';'+userinfo[propertyName];
+      userinfoDiv.appendChild(p);
+
+       }
+    </script>
+</body>
+
+</html>

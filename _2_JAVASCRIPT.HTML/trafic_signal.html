@@ -45,9 +45,10 @@
     <button id="red-btn" style="background-color: RED;" onclick="togglesignal('red')"> RED</button>
     <button id="orange-btn" style="background-color: orange; "onclick="togglesignal('orange')"> ORANGE</button>
     <button id="green-btn" style="background-color: green;"onclick="togglesignal('green')"> GREEN</button>
+    <button id="reset-btn" style="background-color: rgb(107, 10, 197);"onclick="togglesignal('reset')"> reset</button>
     <script>
         function togglesignal(signalcolor){
-            if (signalcolor === 'red') {
+           if (signalcolor === 'red') {
                 document.getElementById('red').style.backgroundColor='red';
                 document.getElementById('orange').style.backgroundColor='white';
                 document.getElementById('green').style.backgroundColor='white';

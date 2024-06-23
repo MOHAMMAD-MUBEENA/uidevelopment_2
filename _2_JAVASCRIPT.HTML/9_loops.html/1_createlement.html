@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div id="course">
+
+    </div>
+    <script>
+        const course = ['java', 'python', 'devOps', 'sap', 'tableus'];
+        for (let i = 0; i < course.length; i++) {
+            console.log(course[i]);
+            const courseDiv=document.getElementById('course'); 
+             const h3=document.createElement('h3');//create html element dynamically using js
+             h3.innerHTML=course[i];// to  display in html
+             courseDiv.appendChild(h3);//append one element as child tag with in parent tag
+        }
+    </script>
+</body>
+
+</html>
