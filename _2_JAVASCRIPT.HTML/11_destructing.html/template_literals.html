@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   <script>let mobileNo= '9676158179';
+    let formatedMobileNo='+91 967 615 8179';
+   mobileNo=mobileNo.split('');
+    console.log(mobileNo);
+
+    
+    const[n1,n2,n3,n4,n5,n6,n7,n8,n9,n10]=mobileNo;
+    formatedMobileNo1='+91'+' '+n1+n2+n3+'  '+n4+n5+n6+'  '+n7+n8+n9+n10;
+    console.log(formatedMobileNo1);
+    formatedMobileNo2=`+91 ${n1}${n2}${n3}  ${n4}${n5}${n6}  ${n7}${n8}${n9}${n10}`;
+    console.log(formatedMobileNo2);
+    const formatedMobileNo3=` +91 ${mobileNo.slice(0,4)}   ${mobileNo.slice(4,6)}    ${mobileNo.slice(6,10)}`;
+    console.log(formatedMobileNo3);
+    </script>
+    
+</body>
+</html>
