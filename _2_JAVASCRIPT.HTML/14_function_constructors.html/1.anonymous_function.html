@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p >
+      price:<span id="price"></span>
+    </p>
+    <p >
+    startTime:<span id="ST"></span>
+      </p>
+      <p >
+    EndTime:<span id="ET"></span>
+      </p>
+      <p >
+        EndTime:<span id="em"></span>
+          </p>
+<script>
+    const flightDetails= {
+        fightName:'air india express',
+        price:4637,
+        arrival:'Hyd hyderabad india',
+        departure:'pune',
+        discount:5,
+        startTime:'2024-07-30T08:00:39.040Z',
+        EndTime:'2024-08-30T02:00:39.040Z',
+        getDiscountedPrice:function(){
+            return parseInt(this.price-(this.price*this.discount)/100);},
+         
+            getStartTime: function() {
+                const dateobj= new Date(this.startTime);
+                return `${dateobj.getHours()}:${dateobj.getMinutes()}`;},
+           
+            getEndTime:function(){
+                const dateobj1= new Date(this.EndTime);
+                return `${this.appendZero(dateobj1.getHours())}:${this.appendZero(dateobj1.getMinutes())}`;},
+            appendZero: function( value){
+                return value.toString().length===1?'0'+value:value;
+
+            }
+                      };
+
+    
+    console.log(flightDetails.getDiscountedPrice());
+    document.getElementById('price').innerHTML=flightDetails.price;
+    document.getElementById('ST').innerHTML=flightDetails.getStartTime();
+    document.getElementById('ET').innerHTML=flightDetails.getEndTime();
+    // anonymous function out side the object//
+    var getEndTime= function(){
+                let dateobj1= new Date(this.EndTime);
+                return `${flightDetails.appendZero(dateobj1.getHours())}:${flightDetails.appendZero(dateobj1.getMinutes())}`;};
+         var appendZero=function( value){
+                return value.toString().length===1?'0'+value:value;}
+                document.getElementById('em').innerHTML=flightDetails.getEndTime();
+         console.log(flightDetails);
+</script>
+</body>
+</html>

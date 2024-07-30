@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="dt"></p>
+   
+    <script>
+        const currentdateoj= new Date();//FOR CUURRENT DATE AND TIME
+        console.log(currentdateoj);
+
+    console.log(currentdateoj.getDate(),currentdateoj.getMonth(),currentdateoj.getFullYear(),currentdateoj.getDay());
+
+
+    currentdateoj.setDate(2);
+    console.log(currentdateoj.toISOString());
+    const modifieddate= new Date('2024-07-02T06:01:00.157Z');
+    const dtstr=`${modifieddate.getDate()}/${modifieddate.getMonth()}/ ${modifieddate.getFullYear()}`
+                console.log(dtstr);
+const dtstr1=`${modifieddate.getDate().toString().length===1?'0'+modifieddate.getDate():modifieddate.getDate()}`;
+ console.log(dtstr1);
+     
+
+ // get duration
+ const date1=new Date('2024-07-02T06:01:00.157Z');
+ const date2=new Date('2024-07-03T06:01:00.157Z');
+ const dateobj1=new Date(date1)
+ const dateobj2=new Date(date2)
+ const diff=Math.abs(dateobj1-dateobj2);
+  const diff1= diff/(1000*60*60);
+
+console.log(diff1);
+
+    </script>
+</body>
+</html>
